@@ -22,7 +22,7 @@ services:
   
   networks:
      docker_net:
-        ipv4_address: 172.18.0.87
+        ipv4_address: 172.87.0.87
 
   container_name: "compose-nginx"
 
@@ -49,7 +49,7 @@ services:
 
   networks:
      docker_net:
-        ipv4_address: 172.18.0.2
+        ipv4_address: 172.87.0.56
 
 #####php5.3
  php5.3:
@@ -74,7 +74,7 @@ services:
 
   networks:
      docker_net:
-        ipv4_address: 172.18.0.3
+        ipv4_address: 172.87.0.53
 
 #####mysql
  mysql:
@@ -95,7 +95,7 @@ services:
 
   networks:
      docker_net:
-        ipv4_address: 172.18.0.4
+        ipv4_address: 172.87.0.33
 
 #####phpmyadmin
  phpmyadmin:
@@ -117,7 +117,7 @@ services:
 
   networks:
      docker_net:
-        ipv4_address: 172.18.0.5
+        ipv4_address: 172.87.0.101
 
 #####network
 networks:
@@ -126,5 +126,5 @@ networks:
    ipam:
     driver: default
     config:
-    - subnet: 172.18.0.0/16
-      gateway: 172.18.0.1
+    - subnet: 172.18.87.0/16
+      gateway: 172.18.87.1
