@@ -9,6 +9,7 @@ services:
   volumes:
    - "$PWD/conf.d:/etc/nginx/conf.d"
    - "$PWD/html:/usr/share/nginx/html"
+   - "/etc/php.ini:/usr/local/etc/php/php.ini
 
   ports:
    - "80:80"
@@ -35,7 +36,8 @@ services:
 
   volumes:
    - "$PWD/html:/var/www/html"
-   - "/etc/localtime:/etc/localtime" 
+   - "/etc/localtime:/etc/localtime"
+   - "/etc/php.ini:/usr/local/etc/php/php.ini
 
   container_name: "compose-php5.6"
 
