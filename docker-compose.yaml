@@ -84,6 +84,7 @@ services:
 
   volumes:
    - "/php-nginx-compose/mysql:/var/lib/mysql/"
+   - "$PWD/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf"
 
   container_name: "compose-mysql"
 
